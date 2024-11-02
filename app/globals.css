@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ededed;
+    --foreground: #0a0a0a; 
   }
 }
 
@@ -18,4 +18,15 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.transparent-bg-home{
+  background: linear-gradient(to right, 
+  rgba(240, 248, 255, 0.9) 0%,  
+  rgba(170, 162, 215, 0.9) 70%  ,
+  rgba(122, 195, 220, 0.5) 100%   
+  );
+}
+.bg-color-home {
+  background:  linear-gradient(to top, rgba(205, 193, 255, 1), rgba(100, 0, 200, 0));
 }
