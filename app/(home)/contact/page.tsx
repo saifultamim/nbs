@@ -35,7 +35,7 @@ const [formData,setFormData]=useState<FormData>({
   };
 
   return (
-    <div className="grid items-center justify-center  text-white  rounded-xl h-screen transparent-bg-home">
+    <div className="  grid items-center justify-center  text-white  rounded-xl transparent-bg-home pt-32  pb-16 ">
     <div className="max-w-4xl mx-4 p-8  shadow-lg rounded-lg shadow-slate-500 bg-[#5D3FD3] ">
       <h2 className="text-3xl font-bold text-center mb-10">Contact</h2>
       <form className="space-y-6" onSubmit={handleSubmit}>
