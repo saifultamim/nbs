@@ -26,6 +26,7 @@ export const customerCount = async () => {
 
 // export const customerCount = async() =>{
 //     try {
+     
 //         const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/customer`, {
 //           method: 'GET',
 //           headers: {
@@ -48,7 +49,7 @@ export const customerCount = async () => {
 
     // export const merchantCount = async() =>{
     //   try {
-        
+      
     //       const response = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/merchant`, {
     //         method: 'GET',
     //         headers: {
