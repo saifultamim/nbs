@@ -11,7 +11,8 @@ import Question from './components/Question/Question';
 import AddressMap from './components/AddressMap/AddressMap';
 import Download from './components/Download/Download';
 
-const page = () => {
+
+const page = async() => {
     return (
         <div className='z-30'>
     <div className=' bg-colour'  > 

@@ -1,9 +1,34 @@
 import React from 'react';
-import { achivement_data } from './Achivement-data';
+//import { achivement_data } from './Achivement-data';
 //import { MdArrowRightAlt } from "react-icons/md";
 //import Link from 'next/link';
+import { MdOutlineAppRegistration } from "react-icons/md";
+import { FaUserCog } from "react-icons/fa";
+import { customerCount, merchantCount } from './server-action';
+//import connectDB from '@/helpers/db-connection/connectDB';
+const Achivement = async () => {
+  //  await connectDB()
+    const {customerNumber} = await customerCount()
+    const {merchantNumber}= await merchantCount()
 
-const Achivement = () => {
+   const achivement_data = [
+        {
+            icon: <MdOutlineAppRegistration />,
+            number:`${customerNumber ? customerNumber : 0}k+`,
+            title:'Customer Registration'
+        },
+        {
+            icon:  <FaUserCog />,
+            number:`${merchantNumber ? merchantNumber : 0}k+`,
+            title:'Merchant Registration'
+        },
+        // {
+        //     icon: <FiDownload/>,
+        //     number:'80k+',
+        //     title:'Installation'
+        // },
+    ] 
+    
     return (
         <div className='grid grid-cols-1 md:grid-cols-[1fr_2fr]  lg:grid-cols-[1fr_2fr] text-black   items-center mx-auto'>
             {/* First section with text */}

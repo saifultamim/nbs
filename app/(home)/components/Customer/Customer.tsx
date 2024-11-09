@@ -4,7 +4,8 @@ import React from 'react';
 import { customer_data, customer_data_list } from './Customer-data';
 
 
-const Customer = () => {
+const Customer = async () => {
+
     return (
         <div>
         <div className='grid md:grid-cols-1 lg:grid-cols-2 justify-between  mx-auto items-center '>

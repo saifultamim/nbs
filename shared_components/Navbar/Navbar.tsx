@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useState, useRef, useEffect } from 'react';
 import { TiThMenu } from "react-icons/ti";
-import { IoClose } from "react-icons/io5";  // Import the close icon
+import { IoClose } from "react-icons/io5";  
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +11,6 @@ const Navbar = () => {
   const [time, setTime] = useState(90);
   const route = useRouter();
   const menuRef = useRef<HTMLDivElement | null>(null);
-
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
   };
@@ -38,7 +37,7 @@ const Navbar = () => {
     if (sectionId === 'contact') {
       route.push('/contact');
       setIsOnContactPage(true);
-      setTime(900);
+      setTime(1100);
     } else {
       if (isOnContactPage) {
         route.push('/');
@@ -57,11 +56,11 @@ const Navbar = () => {
 
       setTime(90);
     }
-    setIsOpen(false); // Close the menu after navigation
+    setIsOpen(false); // Close the menu after navigation shadow-lg shadow-gray-500
   };
 
   return (
-    <nav className="w-10/12 text-black shadow-lg shadow-gray-500 fixed bg-white z-50 rounded-lg">
+    <nav className="w-10/12 text-black  fixed bg-white z-50 rounded-lg">
       <div className="container mx-auto grid grid-cols-[1fr_2fr] justify-between items-center p-6">
         
         {/* Logo */}
